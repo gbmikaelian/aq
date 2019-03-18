@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+      "browser": true
+  },
+  "plugins": [
+      "react"
+  ],
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+  ],
+  "rules": {
+        "no-console": "off",
+        "react/display-name": [0],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "indent": ["error", 4]
+    },
+    "globals": {
+        "module": false,
+        "process": false
+    },
+    "settings": {
+        "react": {
+          "createClass": "createReactClass", 
+                                             
+          "pragma": "React",  
+          "version": "detect", 
+                               
+          "flowVersion": "0.53" 
+        },
+        "propWrapperFunctions": [
+            
+            "forbidExtraProps",
+            {"property": "freeze", "object": "Object"},
+            {"property": "myFavoriteWrapper"}
+        ],
+        "linkComponents": [
+          
+          "Hyperlink",
+          {"name": "Link", "linkAttribute": "to"}
+        ]
+      }
+}
